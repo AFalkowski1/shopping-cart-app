@@ -27,3 +27,5 @@ The project was developed with an emphasis on clean code and the application of 
 
 ## How to run?
 To run the project, ensure you have a configured Java environment and compile the code using Java build tools (e.g., Maven or Gradle).
+
+**Author:** A. Falkowski | Project created as a programming exercise.
