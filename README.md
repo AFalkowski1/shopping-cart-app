@@ -1,26 +1,29 @@
-# Aplikacja Koszyka Zakupów
+# Shopping Cart Application
 
-Projekt `shopping-cart-app` to implementacja logiki koszyka zakupów dla sklepu internetowego. Aplikacja skupia się na zaawansowanym zarządzaniu produktami, w tym sortowaniu i aplikowaniu różnorodnych promocji. Głównym celem projektu jest demonstracja kluczowych wzorców projektowych i zasad programowania obiektowego w języku Java.
+The **shopping-cart-app** project is an implementation of shopping cart logic for an e-commerce store. The application focuses on advanced product management, including sorting and applying various promotions. The main goal of the project is to demonstrate key design patterns and object-oriented programming principles in the Java language.
 
-### Główne funkcjonalności
+---
 
-Projekt implementuje następujące funkcje:
+## Key Features
 
-* **Zarządzanie produktami**: Aplikacja operuje na obiektach typu `Product` (kod, nazwa, cena, cena promocyjna) i przechowuje je w tablicy.
-* **Wyszukiwanie**: Wyszukiwanie najtańszych/najdroższych produktów oraz `n` najtańszych/najdroższych produktów z kolekcji.
-* **Sortowanie**: Sortowanie produktów według ceny (malejąco) oraz alfabetycznie według nazwy. Mechanizm sortowania jest elastyczny i może być modyfikowany.
-* **Kalkulacja sumy**: Obliczanie sumy cen wszystkich produktów w koszyku.
-* **Aplikowanie promocji**: Aplikowanie wielu rodzajów promocji, takich jak rabaty procentowe, gratisowe produkty czy zniżki kwotowe. Mechanizm promocji został zaprojektowany w taki sposób, aby łatwo było dodawać i usuwać nowe zasady.
+The project implements the following functions:
+* **Product Management:** The application operates on `Product` objects (code, name, price, promotional price) and stores them in an array.
+* **Searching:** Finding the cheapest/most expensive products and the `n` cheapest/most expensive products from the collection.
+* **Sorting:** Sorting products by price (descending) and alphabetically by name. The sorting mechanism is flexible and can be easily modified.
+* **Total Calculation:** Calculating the total price of all products in the cart.
+* **Applying Promotions:** Applying multiple types of promotions, such as percentage discounts, free products, or fixed-amount discounts. The promotion mechanism was designed to easily add and remove new rules.
 
-### Kluczowe aspekty techniczne
+---
 
-Projekt został zrealizowany z naciskiem na czysty kod i zastosowanie zasad programowania obiektowego:
+## Key Technical Aspects
 
-* **Wzorce projektowe**: W implementacji koszyka i promocji użyto **wzorca `Command`**, co zapewnia elastyczność i rozszerzalność systemu.
-* **Zasady SOLID**: Zastosowano **`Dependency Inversion Principle`** w mechanizmie sortowania, co umożliwia łatwą zmianę kryteriów sortowania (np. po cenie, po nazwie) bez modyfikacji głównej logiki.
-* **Interfejsy Javy**: Wykorzystano interfejsy `Comparable` i `Comparator` do implementacji elastycznego mechanizmu sortowania.
-* **Testy jednostkowe**: Projekt zawiera kompleksowe **testy jednostkowe** dla wszystkich zaimplementowanych funkcjonalności, co gwarantuje poprawność działania aplikacji.
+The project was developed with an emphasis on clean code and the application of object-oriented principles:
+* **Design Patterns:** The **Command pattern** was used in the implementation of the cart and promotions, which ensures system flexibility and extensibility.
+* **SOLID Principles:** The **Dependency Inversion Principle** was applied in the sorting mechanism, allowing for easy changes to sorting criteria (e.g., by price, by name) without modifying the core logic.
+* **Java Interfaces:** The `Comparable` and `Comparator` interfaces were utilized to implement a flexible sorting mechanism.
+* **Unit Tests:** The project includes comprehensive **unit tests** for all implemented functionalities, which guarantees the correctness of the application.
 
-### Jak uruchomić?
+---
 
-Aby uruchomić projekt, upewnij się, że masz skonfigurowane środowisko Java i skompiluj kod, używając narzędzi do budowania projektów Java (np. Maven lub Gradle).
+## How to run?
+To run the project, ensure you have a configured Java environment and compile the code using Java build tools (e.g., Maven or Gradle).
